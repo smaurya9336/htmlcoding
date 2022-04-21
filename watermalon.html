@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watermelon</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #fff;
+
+        }
+        .shape{
+            position: absolute;
+            background: #ff395d;
+            top: 50%;
+            left: 50%;
+            width: 320px;
+            transform: translate(-50%,-50%) translateY(40px) rotate(25deg);
+            height: 160px;
+            border-left: 20px solid #92e256;
+            border-right: 20px solid #92e256;
+            border-bottom: 20px solid #92e256;
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+
+        }
+        .shape::before{
+            content: '';
+            position:absolute;
+            top: 0;
+            left: -20px;
+            width: calc(50% + 20px);
+            height: calc(100% + 20px);
+            background: rgba(255,255,255, 0.3);
+
+        }
+        span{
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: #262626;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 20px;
+            position: relative;
+            left: 8%;
+        }
+        span:nth-child(6),
+        span:nth-child(12),
+        span:nth-child(13){
+            background: transparent;
+
+        }
+        h2{
+            text-align: center;
+            margin-top: 15%;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Watermelon</h2>
+    <div class="shape">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>
