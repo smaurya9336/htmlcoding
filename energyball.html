@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.energy{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    
+}
+.energy span{
+    position: absolute;
+    width: calc(300px + var(--i));
+    height: 300px;
+    background: var(--clr);
+    border-radius: 50%;
+    transform-origin:calc(100px + var(--i ));
+    animation: animate 5s linear infinite;
+    animation-duration: calc(var(--d));
+    mix-blend-mode: plus-lighter;
+    filter: blur(30px);
+}
+.energy span:nth-child(even){
+    animation-direction: reverse;
+
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="energy">
+        <span style="--clr:#fbad04;--i:18px;--d:2.5s"></span>
+        <span style="--clr:#03a1d9;--i:13px;--d:5s"></span>
+        <span style="--clr:#f7036d;--i:15px;--d:7.5s"></span>
+        <span style="--clr:#93ff16;--i:20px;--d:10s"></span>
+        
+   </div>
+</body>
+</html>
