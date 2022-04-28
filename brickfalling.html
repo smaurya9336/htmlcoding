@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just For Fun| Brick Fall</title>
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(bg4.jpeg);
+    background-size: cover;
+    overflow: hidden;
+
+}
+.container span{
+    display: inline-flex;
+    width: 9.7%;
+    height: 40px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,1);
+}
+.container span.fall{
+    z-index: 1000;
+    background: #f00;
+    transition: 0.2s;
+    pointer-events: none;
+    animation: fall 2s linear forwards;
+}
+@keyframes fall{
+    0%{
+        transform: translateY(0) rotate(0deg);
+    }
+    100%{
+        transform: translateY(1000px) rotate(20deg);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        <span class="fall"></span>
+        
+    </div>
+
+    <scrip src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+       
+    <scrip type="text/javascript">
+        $(document).ready(function(){
+            $('span').mouseover(function(){
+                $(this).addClass('fall')
+            })
+
+        })
+    </script>
+
+    
+</body>
+</html>
