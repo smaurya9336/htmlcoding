@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background: url('bg.jpeg');
+            background-size: cover;
+        }
+        #outer{
+            height: 700px;
+            width: 100%;
+            font-size: 50px;
+            background: rgba(0,0,0,.2);
+            color: white;
+            text-align: center;
+
+        }
+        #login{
+            height: 300px;
+            width: 500px;
+            background: rgba(0,0,0,.5);
+            color: white;
+            font-size: 18px;
+            text-align: left;
+            margin: 20px auto;
+            padding: 30px;
+            transition: all ease 1s;
+
+            
+        }
+        #login:hover{
+            transform: scale(1.1);
+            transition: all ease 1s;
+            background: linear-gradient(45deg,rgba(255,255,255,.4),rgba(255,255,255,.5));
+        }
+        .txt{
+            height: 45px;
+            width: 100%;
+            background:transparent ;
+            color: white;
+            margin-bottom: 20px;
+        }
+        #a{
+            height: 50px;
+            width: 100%;
+            background: orange;
+            text-align: center;
+            line-height: 50px;
+            border: none;
+            
+            
+            
+        }
+       .btn{
+            height: 50px;
+            width: 500px;
+            background: orange;
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+        a{
+            text-decoration: none;
+        }
+        ::placeholder{
+            color: orange;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <br><br>
+        Welcome to <b style="color:orange;">Login</b>
+        <div id="login">
+            <form>
+                USERID<br>
+                <input type="text" class="txt" placeholder="USERID"/><br>
+                PASSWORD<br>
+                <input type="password" class="txt" placeholder="PASSWORD"/><br>
+                <br> <div id="a"><a href="https:\\www.linkedin.com/in/sarita-maurya-9aa7b2216"><b style="color:white; font-size:25px;">Login</b></a></div>
+                <!--<input type="submit" value="Login" class="btn" />
+            -->
+               
+            </form>
+        </div>
+    </div>
+</body>
+</html>
